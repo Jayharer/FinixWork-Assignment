@@ -1,0 +1,76 @@
+Task 1 solution:
+
+      take input 
+      inputlist <- save as two dimension array
+      while(inputlist not empty){
+       list <- take every list from input
+       perform insertion sort strategy on list
+       count <- no of replacement occure
+       save count into output_list
+       }
+      print output_list
+
+
+Task 2 solution:
+
+      take given input
+      for each word in input_list :
+        combination_list <- make a list of all possible         combination of word related to pattern
+        for each item in combination_list:
+          if( check that item satisfy pattern                         matching criteria ) :
+               insert that element into final list
+        count <- count no of items into final list
+        save count into output_list
+      print output_list
+
+Task 3 solution:
+
+  Algorithm_1:
+
+      take list data
+      max_data <- maximum item into list
+      count = 0
+      variance <- find variance in data
+      while( variance not equal to zero )
+          
+          if(variance > 2.5):
+               increase all items by 5 except max_data
+               count = count+1
+          elif(variance < 2.5 and variance > 0.3):
+               increase all items by 2 except max_data
+               count = count+1
+          else:
+              increase all items by 1 except max_data
+              count = count+1
+          variance <- find variance in data
+     return count.
+
+
+
+  Algorithm_2:
+
+      list_data <- take list data
+      count = 0
+      while( true ) :
+         if( no of distinct items == 1):
+              break
+
+         max_data  <- maximum item into list
+         min_data  <- minimum item into list
+         difference <- max_data - min_data
+
+         if(difference >= 5):
+             increase all items by 5 except max_data
+             count = count+1
+         elif ( difference >= 2):
+             increase all items by 2 except max_data
+             count = count+1
+        else:
+             increase all items by 1 except max_data
+             count = count+1
+      return count
+   
+          
+note : Algorithm_1 gives bad performance in some cases
+       therefor I choose Algorithm_2
+          
