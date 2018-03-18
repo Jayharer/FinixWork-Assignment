@@ -1,6 +1,6 @@
 # FinixWork-Assignment
 
-Project consist of three tasks
+Project consist of three tasks 
 
 Task 1 : Building sorting robot
 Task 2 : Pattern count
